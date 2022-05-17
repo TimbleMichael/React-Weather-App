@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import axios from 'axios';
-import Background from './backgroundComponent';
+import Background from './Background';
 
 
 function App() {
@@ -33,13 +33,11 @@ function App() {
         type="text"/>
       </div>
 
+      <div className="container">
 
-      <div className="container">   
-
-      
         <div>
-            <Background weatherDescription={data.weather ? <p>{data.weather[0].main}</p> : console.log("false")}/>
-        </div>
+          <Background weatherDescription = {data.weather ? data.weather[0].main : null} />
+        </div>   
 
         <div className="top">
           <div className="location">
