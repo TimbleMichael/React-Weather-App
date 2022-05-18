@@ -12,6 +12,8 @@ import video10 from "./Videos/Dust.mp4";
 import video11 from "./Videos/Fog.mp4";
 import video12 from "./Videos/Sand.mp4";
 import video13 from "./Videos/Smoke.mp4";
+import video14 from "./Videos/Squall.mp4";
+import video15 from "./Videos/Tornado.mp4";
 
 function Background(props) {
 
@@ -68,6 +70,14 @@ function Background(props) {
         {
             name:"Smoke",
             background: video13
+        },
+        {
+            name:"Squall",
+            background: video14
+        },
+        {
+            name:"Tornado",
+            background: video15
         }
         
         
